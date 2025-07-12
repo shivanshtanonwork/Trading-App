@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 
 import { Tooltip, Grow } from "@mui/material";
-import { KeyboardArrowUp, KeyboardArrowDown } from "@mui/icons-material";
+import {
+  KeyboardArrowUp,
+  KeyboardArrowDown,
+  BarChart,
+  BarChartOutlined,
+  MoreHoriz,
+} from "@mui/icons-material";
 
 import { watchlist } from "../data/data";
 const WatchList = () => {
@@ -69,6 +75,29 @@ const WatchListAction = ({ uid }) => {
           TransitionComponent={Grow}
         >
           <button className="buy">Buy</button>
+        </Tooltip>
+        <Tooltip
+          title="Sell (S)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className="sell">Sell</button>
+        </Tooltip>
+        <Tooltip
+          title="Analytics (A)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className="action">
+            <BarChartOutlined className="icon" />
+          </button>
+        </Tooltip>
+        <Tooltip title="More" placement="top" arrow TransitionComponent={Grow}>
+          <button className="action">
+            <MoreHoriz className="icon" />
+          </button>
         </Tooltip>
       </span>
     </span>
