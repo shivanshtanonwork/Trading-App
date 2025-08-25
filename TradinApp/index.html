@@ -1,4 +1,64 @@
-<h1>Trading App</h1>
-<a href="https://trading-app-2-hmty.onrender.com">Go to Frontend</a>
-<a href="https://trading-app-1-68ur.onrender.com">Go to Dashboard</a>
-<!-- <a href="https://trading-app-pa5r.onrender.com">Go to Backend (API)</a> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trading App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <header class="w-full py-6 px-8 flex items-center justify-between shadow-sm bg-white">
+    <!-- Logo as Title -->
+    <a href="/" class="flex items-center">
+      <img src="logo.svg" alt="Trading App Logo" class="h-10">
+    </a>
+
+    <!-- Navbar Links -->
+    <nav class="hidden sm:flex gap-6 text-gray-700 font-medium">
+      <a href="https://trading-app-2-hmty.onrender.com/" class="hover:text-blue-600">Home</a>
+      <a href="https://trading-app-2-hmty.onrender.com/about" class="hover:text-blue-600">About</a>
+      <a href="https://trading-app-1-68ur.onrender.com/" target="_blank" class="hover:text-blue-600">Dashboard</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="home" class="flex flex-col items-center justify-center text-center px-6 py-20">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-6">
+      Trade Smarter, Faster, Better
+    </h1>
+    <p class="text-lg text-gray-600 max-w-2xl mb-10">
+      A modern trading platform for users and admins.  
+      Access your dashboard or explore the trading app with one click.
+    </p>
+
+    <!-- Call to Action Buttons -->
+    <div class="flex flex-col sm:flex-row gap-6">
+      <a href="https://trading-app-2-hmty.onrender.com" target="_blank"
+         class="px-8 py-4 text-lg font-semibold rounded-xl bg-blue-600 text-white hover:bg-blue-700 shadow-lg transition">
+        🌐 Landing Page
+      </a>
+
+      <a href="https://trading-app-1-68ur.onrender.com" target="_blank"
+         class="px-8 py-4 text-lg font-semibold rounded-xl bg-green-600 text-white hover:bg-green-700 shadow-lg transition">
+        📊 Trading Dashboard
+      </a>
+    </div>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" class="px-6 py-16 bg-white text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">About Trading App</h2>
+    <p class="text-gray-600 max-w-3xl mx-auto">
+      Trading App is built to simplify your investments and trading experience.  
+      With a clean interface and powerful dashboard, you can monitor trades, analyze data,  
+      and manage your portfolio with ease.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 text-sm border-t">
+    © 2025 Trading App. All rights reserved.
+  </footer>
+</body>
+</html>
